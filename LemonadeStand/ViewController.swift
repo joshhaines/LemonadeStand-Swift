@@ -180,11 +180,15 @@ class ViewController: UIViewController {
         switch add {
         case true:
             if mixLemons < 99 && lemons >= 1 {
+                purchaseLemons = 0
+                purchaseIceCubes = 0
                 mixLemons++
                 lemons--
             }
         default:
             if mixLemons > 0 {
+                purchaseLemons = 0
+                purchaseIceCubes = 0
                 mixLemons--
                 lemons++
             }
@@ -196,11 +200,15 @@ class ViewController: UIViewController {
         switch add {
         case true:
             if mixIceCubes < 99 && iceCubes >= 1 {
+                purchaseLemons = 0
+                purchaseIceCubes = 0
                 mixIceCubes++
                 iceCubes--
             }
         default:
             if mixIceCubes > 0 {
+                purchaseLemons = 0
+                purchaseIceCubes = 0
                 mixIceCubes--
                 iceCubes++
             }
